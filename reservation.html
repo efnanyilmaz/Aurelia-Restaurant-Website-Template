@@ -1,0 +1,363 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- © 2026 efnan.dev — All rights reserved. Licensed per LICENSE.txt; do not resell or redistribute this source as a standalone template/theme. -->
+<meta charset="UTF-8">
+<title>Rezervasyon · Aurelia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Aurelia'da masa ayırtın: 123 Example Street, Your City. Her gün 20:00 – 00:00 arası açık.">
+<meta name="theme-color" content="#F8F3E8">
+<link rel="canonical" href="https://www.yourdomain.com/reservation.html">
+<link rel="icon" href="assets/img/icon/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/icon/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400..700;1,400..600&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css?v=2.0">
+
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"Aurelia",
+  "url":"https://www.yourdomain.com/",
+  "telephone":"+900000000000",
+  "address":{"@type":"PostalAddress","streetAddress":"123 Example Street","addressLocality":"Your City","addressCountry":"US"},
+  "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"20:00","closes":"00:00"},
+  "sameAs":["https://www.instagram.com/aurelia.restaurant/"]
+}
+</script>
+</head>
+<body class="has-photo-hero">
+
+<!-- ANNOUNCEMENT BAR — edit the message below, or remove this whole block to disable -->
+<div class="announce-bar">
+  <div class="announce-bar-inner">
+    <p><i class="fas fa-champagne-glasses"></i> <span data-i18n="announce-text">Tonight: Live Jazz from 8 PM — walk-ins welcome.</span></p>
+    <button class="announce-close" aria-label="Dismiss announcement"><i class="fas fa-times"></i></button>
+  </div>
+</div>
+
+<div class="loader">
+  <div class="loader-icon-wrap"><img src="assets/img/icon/favicon.png" alt="Aurelia"></div>
+  <span class="lname">AURELIA</span>
+  <span class="loader-bar"><span></span></span>
+</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img src="assets/img/icon/favicon.png" alt="Aurelia">
+      <span class="brand-name">Aurelia<small>Restaurant & Bar</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav-about">About</a></li>
+      <li><a href="menu.html" data-i18n="nav-menu">Menu</a></li>
+      <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+      <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="tr">TR</button><button type="button" data-lang="en">EN</button></div>
+            <a href="reservation.html" class="nav-reserve-btn" data-i18n="nav-reserve-short">Reserve</a>
+      <button class="icon-link cart-nav-btn" data-cart-open aria-label="Open cart">
+        <i class="fas fa-bag-shopping"></i>
+        <span class="cart-badge" style="display:none">0</span>
+      </button>
+      <a class="icon-link" href="https://www.instagram.com/aurelia.restaurant/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-nav">
+  <button class="mobile-nav-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+  <div class="mobile-nav-links">
+    <a href="index.html" data-i18n="nav-home">Home</a>
+    <a href="about.html" data-i18n="nav-about">About</a>
+    <a href="menu.html" data-i18n="nav-menu">Menu</a>
+    <a href="gallery.html" data-i18n="nav-gallery">Gallery</a>
+    <a href="contact.html" data-i18n="nav-contact">Contact</a>
+  </div>
+  <div class="mobile-nav-foot">
+    <a href="reservation.html" class="mobile-reserve-btn" data-i18n="nav-reserve">Reserve a Table</a>
+    <div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="tr">TR</button><button type="button" data-lang="en">EN</button></div>
+    <div class="mobile-nav-social">
+      <a href="https://www.instagram.com/aurelia.restaurant/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="tel:+900000000000" aria-label="Call Aurelia"><i class="fas fa-phone"></i></a>
+    </div>
+  </div>
+</div>
+
+<section class="res-hero">
+  <div class="res-hero-bg">
+    <img src="assets/img/img11.webp" alt="Window-side table set at Aurelia with garden views">
+  </div>
+  <div class="wrap">
+    <span class="kicker" data-i18n="res-kicker">Reservations</span>
+    <h1>
+      <span data-i18n="res-title-1">Reserve</span>
+      <span class="serif-italic copper-text" data-i18n="res-title-2">Your Table</span>
+    </h1>
+    <p data-i18n="res-desc">Choose a date and how many you'll be — we'll confirm shortly.</p>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section class="section wrap">
+  <div class="reservation-block">
+    <div class="reservation-info-card">
+      <span class="kicker" data-i18n="res-info-kicker">Good to Know</span>
+      <h2><span data-i18n="res-info-title-1">Before You</span><br><span class="serif-italic copper-text" data-i18n="res-info-title-2">Book</span></h2>
+      <p data-i18n="res-info-text">Tables are held for 15 minutes past the reserved time. We'll confirm your request by phone or e-mail within a few hours.</p>
+
+      <div class="res-facts">
+        <div class="res-fact"><span class="res-fact-label" data-i18n="res-fact-hold-lbl">Hold Time</span><span class="res-fact-value" data-i18n="res-fact-hold-val">15 Minutes</span></div>
+        <div class="res-fact"><span class="res-fact-label" data-i18n="res-fact-guests-lbl">Guests</span><span class="res-fact-value" data-i18n="res-fact-guests-val">Up to 10 Online</span></div>
+        <div class="res-fact"><span class="res-fact-label" data-i18n="res-fact-hours-lbl">Hours</span><span class="res-fact-value">20:00 – 00:00</span></div>
+        <div class="res-fact"><span class="res-fact-label" data-i18n="res-fact-larger-lbl">Larger Groups</span><span class="res-fact-value"><a href="tel:+900000000000" style="color:inherit">0000 000 00 00</a></span></div>
+      </div>
+    </div>
+
+    <div>
+      <span class="kicker" data-i18n="res-form-kicker">Reservation Form</span>
+      <h2 style="font-size:clamp(1.5rem,3vw,2.1rem);margin:.4rem 0 1rem"><span data-i18n="res-form-title-1">Request Your</span> <span class="serif-italic copper-text" data-i18n="res-form-title-2">Table</span></h2>
+
+      <div id="resToast" style="display:none;margin-bottom:.9rem;padding:.7rem 1rem;border-radius:var(--radius);font-size:.85rem;font-family:var(--body)"></div>
+
+      <form id="reservationForm" class="reservation-form" novalidate>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="rv-name" data-i18n="label-name">Name</label>
+            <input type="text" id="rv-name" required placeholder="Your Full Name" data-i18n-ph="ph-name">
+          </div>
+          <div class="field">
+            <label for="rv-phone" data-i18n="label-phone">Phone</label>
+            <input type="tel" id="rv-phone" required placeholder="0000 000 00 00" data-i18n-ph="ph-phone">
+          </div>
+        </div>
+        <div class="field">
+          <label for="rv-email" data-i18n="label-email">E-mail</label>
+          <input type="email" id="rv-email" required placeholder="example@mail.com" data-i18n-ph="ph-email">
+        </div>
+
+        <div class="form-row form-row-3">
+          <div class="field">
+            <label for="rv-date" data-i18n="res-label-date">Date</label>
+            <input type="date" id="rv-date" required>
+          </div>
+          <div class="field">
+            <label for="rv-time" data-i18n="res-label-time">Time</label>
+            <input type="time" id="rv-time" required value="20:00">
+          </div>
+          <div class="field">
+            <label for="rv-guests" data-i18n="res-label-guests">Guests</label>
+            <select id="rv-guests" required>
+              <option value="1" data-i18n="res-guest-1">1 guest</option>
+              <option value="2" selected data-i18n="res-guest-2">2 guests</option>
+              <option value="3" data-i18n="res-guest-3">3 guests</option>
+              <option value="4" data-i18n="res-guest-4">4 guests</option>
+              <option value="5" data-i18n="res-guest-5">5 guests</option>
+              <option value="6" data-i18n="res-guest-6">6 guests</option>
+              <option value="7" data-i18n="res-guest-7">7 guests</option>
+              <option value="8" data-i18n="res-guest-8">8 guests</option>
+              <option value="9" data-i18n="res-guest-9">9 guests</option>
+              <option value="10" data-i18n="res-guest-10">10 guests</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="rv-notes"><span data-i18n="res-label-notes">Special Requests</span> <span style="color:var(--ink-faint);font-weight:400" data-i18n="res-notes-optional">(optional)</span></label>
+          <textarea id="rv-notes" placeholder="Celebrations, seating preference…" data-i18n-ph="res-ph-notes"></textarea>
+        </div>
+
+        <label class="consent-row">
+          <input type="checkbox" id="rv-consent" required>
+          <span data-i18n="consent-text">I have read and accept the <a href="privacy-policy.html" target="_blank">Privacy Notice</a> regarding the processing of my personal data.</span>
+        </label>
+        <button type="submit" class="btn btn-primary" id="resSubmitBtn" style="width:100%;justify-content:center">
+          <span class="btn-text" data-i18n="res-submit-btn">Request Reservation</span>
+          <i class="fas fa-champagne-glasses arrow" id="resBtnIcon"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="foot-brand"><img src="assets/img/icon/favicon.png" alt="Aurelia"><b>Aurelia</b></div>
+        <p data-i18n="foot-tag">A table worth making time for.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/aurelia.restaurant/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://maps.google.com/?q=123+Example+Street+Your+City" target="_blank" rel="noopener" aria-label="Location"><i class="fas fa-location-dot"></i></a>
+          <a href="tel:+900000000000" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot-explore">Explore</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav-about">About</a></li>
+          <li><a href="menu.html" data-i18n="nav-menu">Menu</a></li>
+          <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+          <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+          <li><a href="reservation.html" data-i18n="nav-reserve">Reserve a Table</a></li>
+          <li><a href="faq.html" data-i18n="foot-nav-faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot-contact">Contact</h4>
+        <ul>
+          <li><a href="https://maps.google.com/?q=123+Example+Street+Your+City" target="_blank" rel="noopener" data-i18n="footer-address">123 Example Street, Your City</a></li>
+          <li><a href="tel:+900000000000">0000 000 00 00</a></li>
+          <li><a href="mailto:you@example.com">you@example.com</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot-hours">Opening Hours</h4>
+        <div class="foot-hours">
+          <div class="hr-row"><span data-i18n="foot-everyday">Every day</span><span>20:00 – 00:00</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© <span id="year">2026</span> Aurelia · <span data-i18n="footer-rights">All rights reserved.</span> · <a href="privacy-policy.html" data-i18n="footer-privacy" style="color:rgba(248,243,232,.7);text-decoration:underline">Privacy Policy</a></p>
+      <p class="made copper-text serif-italic" data-i18n="footer-slogan">Good food, always worth the table</p>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="scroll-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+<!-- CART DRAWER -->
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-panel">
+    <div class="cart-head">
+      <h3><i class="fas fa-bag-shopping"></i> <span data-i18n="cart-title">Your Order</span></h3>
+      <button class="cart-close" data-cart-close aria-label="Close cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <div class="cart-empty"><i class="fas fa-bag-shopping"></i><p data-i18n="cart-empty">Your cart is empty</p></div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total"><span data-i18n="cart-total-label">Total</span><span class="cart-total-value">$0</span></div>
+      <button class="btn btn-primary cart-checkout" id="cartCheckoutBtn"><i class="fab fa-whatsapp"></i> <span data-i18n="cart-checkout-btn">Order via WhatsApp</span></button>
+      <button class="cart-clear" id="cartClearBtn" data-i18n="cart-clear-btn">Clear cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="#" data-whatsapp-link data-whatsapp-text="Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Aurelia."
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script src="assets/js/site-config.js?v=1"></script>
+<script src="assets/js/app.js?v=2.0"></script>
+<script src="assets/js/cart.js?v=2.0"></script>
+
+<!-- RESERVATION FORM HANDLER -->
+<script>
+
+/* Reservation form */
+(function(){
+  const form      = document.getElementById('reservationForm');
+  const toast     = document.getElementById('resToast');
+  const submitBtn = document.getElementById('resSubmitBtn');
+  const btnText   = submitBtn.querySelector('.btn-text');
+  const btnIcon   = document.getElementById('resBtnIcon');
+
+  const dateInput = document.getElementById('rv-date');
+  const today = new Date();
+  dateInput.min = today.toISOString().split('T')[0];
+
+  function lang(){ return (window.__aureliaGetLang && window.__aureliaGetLang()) || 'tr'; }
+  function t(key, fallback){ return (window.__aureliaT && window.__aureliaT(key)) || fallback; }
+
+  function showToast(msg, ok){
+    toast.textContent = msg;
+    toast.style.display = 'block';
+    toast.style.background = ok ? 'rgba(61,90,69,.12)' : 'rgba(184,134,62,.16)';
+    toast.style.border     = '1px dashed ' + (ok ? 'var(--forest)' : 'var(--brass)');
+    toast.style.color      = ok ? 'var(--forest-light)' : 'var(--brass)';
+    if(ok) setTimeout(()=>{ toast.style.display='none'; }, 6000);
+  }
+
+  function setLoading(loading){
+    submitBtn.disabled = loading;
+    if(loading){
+      btnText.textContent = t('res-submit-sending','Sending…');
+      btnIcon.className = 'fas fa-spinner fa-spin arrow';
+    } else {
+      btnText.textContent = t('res-submit-btn','Request Reservation');
+      btnIcon.className = 'fas fa-champagne-glasses arrow';
+    }
+  }
+
+  function validate(){
+    const name  = document.getElementById('rv-name').value.trim();
+    const phone = document.getElementById('rv-phone').value.trim();
+    const email = document.getElementById('rv-email').value.trim();
+    const date  = document.getElementById('rv-date').value;
+    const time  = document.getElementById('rv-time').value;
+    if(!name)  { showToast(t('res-toast-name','Please enter your name.'), false); return false; }
+    if(!phone) { showToast(t('res-toast-phone','Please enter a phone number.'), false); return false; }
+    if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+      showToast(t('res-toast-email','Please enter a valid e-mail address.'), false); return false;
+    }
+    if(!date)  { showToast(t('res-toast-date','Please choose a date.'), false); return false; }
+    if(!time)  { showToast(t('res-toast-time','Please choose a time.'), false); return false; }
+    if(!document.getElementById('rv-consent').checked){
+      showToast(t('res-toast-consent','Please accept the Privacy Notice to continue.'), false); return false;
+    }
+    return true;
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    toast.style.display = 'none';
+    if(!validate()) return;
+    setLoading(true);
+
+    const name   = document.getElementById('rv-name').value.trim();
+    const phone  = document.getElementById('rv-phone').value.trim();
+    const email  = document.getElementById('rv-email').value.trim();
+    const date   = document.getElementById('rv-date').value;
+    const time   = document.getElementById('rv-time').value;
+    const guests = document.getElementById('rv-guests').value;
+    const notes  = document.getElementById('rv-notes').value.trim();
+
+    try {
+      const WHATSAPP_PHONE = (window.SITE_CONFIG && window.SITE_CONFIG.whatsapp) || '900000000000'; // set in assets/js/site-config.js
+      const isEn = lang() === 'en';
+      let msg = (isEn ? `Hi, I'd like to reserve a table.\n` : `Merhaba, bir masa rezervasyonu yapmak istiyorum.\n`);
+      msg += (isEn ? `Name: ${name}\nPhone: ${phone}\nE-mail: ${email}\n` : `Ad Soyad: ${name}\nTelefon: ${phone}\nE-posta: ${email}\n`);
+      msg += (isEn ? `Date: ${date}\nTime: ${time}\nGuests: ${guests}\n` : `Tarih: ${date}\nSaat: ${time}\nKişi Sayısı: ${guests}\n`);
+      if (notes) msg += (isEn ? `Notes: ${notes}\n` : `Notlar: ${notes}\n`);
+      window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+
+      setLoading(false);
+      showToast(t('res-toast-success','✓ Opening WhatsApp with your reservation details — just hit send there!'), true);
+      form.reset();
+      document.getElementById('rv-time').value = '20:00';
+      document.getElementById('rv-guests').value = '2';
+    } catch(err) {
+      setLoading(false);
+      showToast(t('res-toast-error','An error occurred while sending. Please try again.'), false);
+      console.error('Reservation submission error:', err);
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

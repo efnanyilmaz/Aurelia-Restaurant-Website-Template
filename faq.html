@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- © 2026 efnan.dev — All rights reserved. Licensed per LICENSE.txt; do not resell or redistribute this source as a standalone template/theme. -->
+<meta charset="UTF-8">
+<title>S.S.S. · Aurelia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Aurelia hakkında rezervasyon, özel beslenme ihtiyaçları, otopark ve daha fazlası için sıkça sorulan sorular.">
+<meta name="theme-color" content="#F8F3E8">
+<link rel="canonical" href="https://www.yourdomain.com/faq.html">
+<link rel="icon" href="assets/img/icon/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/icon/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400..700;1,400..600&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css?v=2.0">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Kalabalık gruplar için rezervasyon alıyor musunuz?","acceptedAnswer":{"@type":"Answer","text":"Evet — 10 kişiye kadar olan gruplar için online rezervasyon formumuzu kullanabilirsiniz. Daha kalabalık gruplar için lütfen bizi doğrudan arayın; size en uygun masa ve saati birlikte planlayalım."}},
+    {"@type":"Question","name":"Otopark imkanı var mı?","acceptedAnswer":{"@type":"Answer","text":"Yakın çevrede cadde üzeri park imkanı bulunmaktadır; ayrıca kısa yürüme mesafesinde bir umumi otopark mevcuttur. Hafta sonu akşamları vale hizmeti sunulmaktadır."}},
+    {"@type":"Question","name":"Alerji veya özel beslenme ihtiyaçlarına uygun seçenekler sunuyor musunuz?","acceptedAnswer":{"@type":"Answer","text":"Elbette. Rezervasyon sırasında alerjilerinizi veya beslenme ihtiyaçlarınızı belirtebilir, ya da masanıza geldiğinizde personelimize iletebilirsiniz — mutfağımız çoğu tabağı isteğinize göre uyarlamaktan memnuniyet duyar."}},
+    {"@type":"Question","name":"Kıyafet kuralı var mı?","acceptedAnswer":{"@type":"Answer","text":"Şık-günlük bir kıyafet öneriyoruz. Kesin bir kıyafet kuralı olmamakla birlikte, akşam saatlerinde plaj kıyafeti veya spor kıyafeti tercih edilmemesini rica ediyoruz."}},
+    {"@type":"Question","name":"Rezervasyonumu değiştirebilir veya iptal edebilir miyim?","acceptedAnswer":{"@type":"Answer","text":"Evet, bize WhatsApp üzerinden yazmanız veya adınız ve rezervasyon saatinizle birlikte aramanız yeterli, sizin için güncelleriz — mümkünse birkaç saat önceden haber vermenizi rica ederiz."}},
+    {"@type":"Question","name":"Özel etkinlik veya catering hizmeti sunuyor musunuz?","acceptedAnswer":{"@type":"Answer","text":"Evet — samimi akşam yemeklerinden mekanın tamamının kiralanmasına kadar çeşitli seçenekler sunuyoruz. Etkinliğinizi planlamak için bize WhatsApp üzerinden ulaşabilirsiniz."}}
+  ]
+}
+</script>
+</head>
+<body class="has-photo-hero">
+
+<!-- ANNOUNCEMENT BAR — edit the message below, or remove this whole block to disable -->
+<div class="announce-bar">
+  <div class="announce-bar-inner">
+    <p><i class="fas fa-champagne-glasses"></i> <span data-i18n="announce-text">Tonight: Live Jazz from 8 PM — walk-ins welcome.</span></p>
+    <button class="announce-close" aria-label="Dismiss announcement"><i class="fas fa-times"></i></button>
+  </div>
+</div>
+
+<div class="loader">
+  <div class="loader-icon-wrap"><img src="assets/img/icon/favicon.png" alt="Aurelia"></div>
+  <span class="lname">AURELIA</span>
+  <span class="loader-bar"><span></span></span>
+</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img src="assets/img/icon/favicon.png" alt="Aurelia">
+      <span class="brand-name">Aurelia<small>Restaurant & Bar</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav-about">About</a></li>
+      <li><a href="menu.html" data-i18n="nav-menu">Menu</a></li>
+      <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+      <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="tr">TR</button><button type="button" data-lang="en">EN</button></div>
+            <a href="reservation.html" class="nav-reserve-btn" data-i18n="nav-reserve-short">Reserve</a>
+      <button class="icon-link cart-nav-btn" data-cart-open aria-label="Open cart">
+        <i class="fas fa-bag-shopping"></i>
+        <span class="cart-badge" style="display:none">0</span>
+      </button>
+      <a class="icon-link" href="https://www.instagram.com/aurelia.restaurant/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-nav">
+  <button class="mobile-nav-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+  <div class="mobile-nav-links">
+    <a href="index.html" data-i18n="nav-home">Home</a>
+    <a href="about.html" data-i18n="nav-about">About</a>
+    <a href="menu.html" data-i18n="nav-menu">Menu</a>
+    <a href="gallery.html" data-i18n="nav-gallery">Gallery</a>
+    <a href="contact.html" data-i18n="nav-contact">Contact</a>
+  </div>
+  <div class="mobile-nav-foot">
+    <a href="reservation.html" class="mobile-reserve-btn" data-i18n="nav-reserve">Reserve a Table</a>
+    <div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="tr">TR</button><button type="button" data-lang="en">EN</button></div>
+    <div class="mobile-nav-social">
+      <a href="https://www.instagram.com/aurelia.restaurant/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="tel:+900000000000" aria-label="Call Aurelia"><i class="fas fa-phone"></i></a>
+    </div>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="kicker" data-i18n="faq-kicker">FAQ</span>
+    <h1>
+      <span data-i18n="faq-title-1">Good to</span>
+      <span class="serif-italic copper-text" data-i18n="faq-title-2">Know</span>
+    </h1>
+    <p data-i18n="faq-intro">Answers to what our guests ask most. Can't find yours? Message us on WhatsApp.</p>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="faq-list" style="max-width:760px;margin-inline:auto">
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span data-i18n="faq-q1">Do you take reservations for large groups?</span>
+        <i class="fas fa-plus faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p data-i18n="faq-a1">Yes — for parties of up to 10, use our <a href="reservation.html">online reservation form</a>. For larger groups, please call us directly at <a href="tel:+900000000000">0000 000 00 00</a> so we can arrange the right table and timing.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span data-i18n="faq-q2">Is there parking available?</span>
+        <i class="fas fa-plus faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p data-i18n="faq-a2">Street parking is available nearby, and there's a public parking garage within a short walking distance. Valet service is available on weekend evenings.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span data-i18n="faq-q3">Can you accommodate dietary restrictions or allergies?</span>
+        <i class="fas fa-plus faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p data-i18n="faq-a3">Absolutely. Please note any allergies or dietary needs when you make your reservation, or let your server know when you arrive — our kitchen is happy to adapt most dishes.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span data-i18n="faq-q4">Is there a dress code?</span>
+        <i class="fas fa-plus faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p data-i18n="faq-a4">We recommend smart casual attire. There's no strict dress code, but we ask guests to avoid beachwear or athletic wear in the evening.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span data-i18n="faq-q5">Can I modify or cancel my reservation?</span>
+        <i class="fas fa-plus faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p data-i18n="faq-a5">Yes — just message us on WhatsApp or call with your name and reservation time, and we'll update it for you. We appreciate a few hours' notice when possible.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span data-i18n="faq-q6">Do you have vegetarian or vegan options?</span>
+        <i class="fas fa-plus faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p data-i18n="faq-a6">Yes, several dishes on our <a href="menu.html">menu</a> are vegetarian, and we're glad to prepare vegan alternatives on request — just let your server know.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span data-i18n="faq-q7">Do you host private events or offer catering?</span>
+        <i class="fas fa-plus faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p data-i18n="faq-a7">Yes — from intimate dinners to full restaurant buyouts. Message us on WhatsApp to start planning.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false">
+        <span data-i18n="faq-q8">What are your opening hours?</span>
+        <i class="fas fa-plus faq-icon"></i>
+      </button>
+      <div class="faq-a">
+        <p data-i18n="faq-a8">We're open every day from 8 PM to midnight.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center;margin-top:3.4rem;padding-top:2.4rem;border-top:1px solid var(--bg-line)">
+    <span class="kicker" style="display:block;margin-bottom:.9rem" data-i18n="faq-still-kicker">Still Have a Question?</span>
+    <a href="#" data-whatsapp-link data-whatsapp-text="Hi%2C%20I%20have%20a%20question%20about%20Aurelia." target="_blank" rel="noopener" class="btn btn-primary">
+      <i class="fab fa-whatsapp"></i> <span data-i18n="faq-ask-btn">Ask on WhatsApp</span>
+    </a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="foot-brand"><img src="assets/img/icon/favicon.png" alt="Aurelia"><b>Aurelia</b></div>
+        <p data-i18n="foot-tag">A table worth making time for.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/aurelia.restaurant/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://maps.google.com/?q=123+Example+Street+Your+City" target="_blank" rel="noopener" aria-label="Location"><i class="fas fa-location-dot"></i></a>
+          <a href="tel:+900000000000" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot-explore">Explore</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav-about">About</a></li>
+          <li><a href="menu.html" data-i18n="nav-menu">Menu</a></li>
+          <li><a href="reservation.html" data-i18n="nav-reserve">Reserve a Table</a></li>
+          <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+          <li><a href="faq.html" data-i18n="foot-nav-faq">FAQ</a></li>
+          <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot-contact">Contact</h4>
+        <ul>
+          <li><a href="https://maps.google.com/?q=123+Example+Street+Your+City" target="_blank" rel="noopener" data-i18n="footer-address">123 Example Street, Your City</a></li>
+          <li><a href="tel:+900000000000">0000 000 00 00</a></li>
+          <li><a href="mailto:you@example.com">you@example.com</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot-hours">Opening Hours</h4>
+        <div class="foot-hours">
+          <div class="hr-row"><span data-i18n="foot-everyday">Every day</span><span>20:00 – 00:00</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© <span id="year">2026</span> Aurelia · <span data-i18n="footer-rights">All rights reserved.</span> · <a href="privacy-policy.html" data-i18n="footer-privacy" style="color:rgba(248,243,232,.7);text-decoration:underline">Privacy Policy</a></p>
+      <p class="made copper-text serif-italic" data-i18n="footer-slogan">Good food, always worth the table</p>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="scroll-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+<!-- CART DRAWER -->
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-panel">
+    <div class="cart-head">
+      <h3><i class="fas fa-bag-shopping"></i> <span data-i18n="cart-title">Your Order</span></h3>
+      <button class="cart-close" data-cart-close aria-label="Close cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <div class="cart-empty"><i class="fas fa-bag-shopping"></i><p data-i18n="cart-empty">Your cart is empty</p></div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total"><span data-i18n="cart-total-label">Total</span><span class="cart-total-value">$0</span></div>
+      <button class="btn btn-primary cart-checkout" id="cartCheckoutBtn"><i class="fab fa-whatsapp"></i> <span data-i18n="cart-checkout-btn">Order via WhatsApp</span></button>
+      <button class="cart-clear" id="cartClearBtn" data-i18n="cart-clear-btn">Clear cart</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/site-config.js?v=1"></script>
+<script src="assets/js/app.js?v=2.0"></script>
+<script src="assets/js/cart.js?v=2.0"></script>
+
+<!-- WHATSAPP FLOAT -->
+<a href="#" data-whatsapp-link data-whatsapp-text="Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Aurelia."
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+document.querySelectorAll('.faq-q').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+      item.classList.add('open');
+      btn.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
