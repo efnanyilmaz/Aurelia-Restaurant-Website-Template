@@ -1,6 +1,6 @@
 # 🍽️ Aurelia — Restaurant Website + Cart
 
-**🔗 [Live Demo](https://aurelia-restaurant-demo.vercel.app)**
+**🔗 [Live Demo](https://aurelia-restaurant-website-nine.vercel.app)**
 
 **Framework-free (Vanilla HTML/CSS/JS)** website starter kit for restaurants and small businesses.
 
