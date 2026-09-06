@@ -1,0 +1,73 @@
+AURELIA — RESTAURANT WEBSITE STARTER KIT
+STANDARD LICENSE AGREEMENT
+
+Author: efnan.dev
+© 2026 efnan.dev. All rights reserved.
+
+This is a template license for a single digital product ("the Item") sold by
+the Author. By purchasing the Item, the Buyer agrees to the following terms.
+
+1. GRANT OF LICENSE
+   The Author grants the Buyer a non-exclusive, non-transferable license to
+   use, modify, and adapt the Item's source code to build ONE end product
+   (a website) per license purchased. The end product may be:
+     - the Buyer's own website, or
+     - a website built for a single client of the Buyer.
+   Buyers who deliver end products to multiple different clients must
+   purchase one license per end product, unless an Extended/Multi-Use
+   license is separately offered and purchased.
+
+2. WHAT'S ALLOWED
+   - Modify the code, design, and content freely.
+   - Use the Item in unlimited personal or client projects, provided each
+     distinct end product is covered by its own license as described above.
+   - Include the Item's code in a compiled/deployed end product delivered
+     to an end client.
+
+3. WHAT'S NOT ALLOWED
+   - Reselling, sublicensing, or redistributing the Item's source code
+     (as-is or after superficial modification) as a standalone product,
+     template, or theme on any marketplace or website.
+   - Claiming authorship of the original Item.
+   - Using the Item to create a competing template/theme product for resale.
+   - Removing this license file from redistributed copies of the source
+     (end products delivered to clients do not need to include this file).
+
+4. NO WARRANTY
+   The Item is provided "as is," without warranty of any kind, express or
+   implied. The Author is not liable for any damages arising from the use
+   of the Item, including but not limited to data loss, downtime, or
+   security incidents in the Buyer's hosting environment. The Buyer is
+   responsible for configuring their own hosting security and backups.
+
+5. DEMO ASSETS
+   The Item ships with 17 real interior and food photos already in place
+   (assets/img/), included and licensed for use as part of this Item — no
+   separate photo license is needed to launch with them as-is. Sample video
+   clips referenced in the code (assets/video/) are NOT included, as the
+   originals were real footage from an actual business (see
+   assets/video/README.txt); the Buyer must supply their own video, or leave
+   it out entirely (the site works fine without it, using the still photos
+   already in place as fallbacks).
+
+6. THIRD-PARTY SERVICES & ASSETS
+   This Item uses the following third-party services/assets under their own
+   terms, which the Buyer must independently review and accept:
+     - Google Fonts: Petrona, Work Sans, IBM Plex Mono — Open Font License
+     - Font Awesome (Free tier) — https://fontawesome.com/license/free
+     - WhatsApp (Meta) — used to relay cart orders, reservations, and
+       contact messages via wa.me links; https://www.whatsapp.com/legal
+
+7. SUPPORT
+   This license does not include ongoing personal support unless separately
+   stated on the product listing. Documentation is provided in README.md.
+
+8. CHANGES TO THIS LICENSE
+   The Author may offer additional license tiers (e.g. Extended License for
+   unlimited end products, or resale rights) separately from this Standard
+   License.
+
+---
+This is a general-purpose template license, not a substitute for legal
+advice. If you plan significant commercial distribution, consider having
+it reviewed by a qualified professional in your jurisdiction.

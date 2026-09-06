@@ -1,0 +1,931 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- © 2026 efnan.dev — All rights reserved. Licensed per LICENSE.txt; do not resell or redistribute this source as a standalone template/theme. -->
+<meta charset="UTF-8">
+<title>Menü · Aurelia</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Aurelia menüsü: antipasti, ana yemekler, pasta, salatalar, şarap & kokteyller ve tatlılar.">
+<meta name="theme-color" content="#F8F3E8">
+<link rel="canonical" href="https://www.yourdomain.com/menu.html">
+<link rel="icon" href="assets/img/icon/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/icon/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petrona:ital,wght@0,400..700;1,400..600&family=Work+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css?v=2.0">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"Aurelia",
+  "url":"https://www.yourdomain.com/",
+  "telephone":"+900000000000",
+  "address":{"@type":"PostalAddress","streetAddress":"123 Example Street","addressLocality":"Your City","addressCountry":"US"},
+  "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"20:00","closes":"00:00"},
+  "sameAs":["https://www.instagram.com/aurelia.restaurant/"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Menu",
+  "name": "Aurelia Menü",
+  "hasMenuSection": [
+    {
+      "@type": "MenuSection",
+      "name": "Antipasti",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Bruschetta al Pomodoro",
+          "offers": {
+            "@type": "Offer",
+            "price": "130",
+            "priceCurrency": "USD"
+          },
+          "description": "Izgara ekmek, San Marzano domates, fesleğen, sarımsak (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Caprese Classica",
+          "offers": {
+            "@type": "Offer",
+            "price": "150",
+            "priceCurrency": "USD"
+          },
+          "description": "Bufala mozzarella, domates, fesleğen, olgunlaştırılmış balsamik (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Prosciutto e Melone",
+          "offers": {
+            "@type": "Offer",
+            "price": "160",
+            "priceCurrency": "USD"
+          },
+          "description": "Parma jambonu, tatlı kavun"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Calamari Fritti",
+          "offers": {
+            "@type": "Offer",
+            "price": "170",
+            "priceCurrency": "USD"
+          },
+          "description": "Çıtır kalamar, limonlu aioli"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Arancini di Riso",
+          "offers": {
+            "@type": "Offer",
+            "price": "140",
+            "priceCurrency": "USD"
+          },
+          "description": "Kızarmış risotto topları, mozzarella, domates sosu (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Antipasto Misto",
+          "offers": {
+            "@type": "Offer",
+            "price": "210",
+            "priceCurrency": "USD"
+          },
+          "description": "Şarküteri, peynir çeşitleri, zeytin, marine sebzeler"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Zuppa Minestrone",
+          "offers": {
+            "@type": "Offer",
+            "price": "120",
+            "priceCurrency": "USD"
+          },
+          "description": "Klasik sebze çorbası, parmesan (V)"
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Insalate",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Insalata Mista",
+          "offers": {
+            "@type": "Offer",
+            "price": "130",
+            "priceCurrency": "USD"
+          },
+          "description": "Karışık yeşillik, domates, zeytinyağlı vinaigrette (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Insalata Cesare",
+          "offers": {
+            "@type": "Offer",
+            "price": "150",
+            "priceCurrency": "USD"
+          },
+          "description": "Marul, parmesan, kruton, ançüez"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Rucola e Parmigiano",
+          "offers": {
+            "@type": "Offer",
+            "price": "140",
+            "priceCurrency": "USD"
+          },
+          "description": "Roka, ince dilimlenmiş parmesan, limon, zeytinyağı (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Insalata di Mare",
+          "offers": {
+            "@type": "Offer",
+            "price": "190",
+            "priceCurrency": "USD"
+          },
+          "description": "Karides, kalamar, midye, limon, maydanoz"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Panzanella",
+          "offers": {
+            "@type": "Offer",
+            "price": "140",
+            "priceCurrency": "USD"
+          },
+          "description": "Toskana usulü ekmek salatası, domates, salatalık, kırmızı soğan (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Insalata di Burrata",
+          "offers": {
+            "@type": "Offer",
+            "price": "170",
+            "priceCurrency": "USD"
+          },
+          "description": "Burrata, özel yetiştirilmiş domates, fesleğen (V)"
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Secondi",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Pollo alla Parmigiana",
+          "offers": {
+            "@type": "Offer",
+            "price": "260",
+            "priceCurrency": "USD"
+          },
+          "description": "Galeta unlu tavuk göğsü, domates sosu, eritilmiş mozzarella, fesleğen"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Salmone alla Griglia",
+          "offers": {
+            "@type": "Offer",
+            "price": "290",
+            "priceCurrency": "USD"
+          },
+          "description": "Izgara somon fileto, limonlu tereyağı, kuşkonmaz"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Polpette al Sugo",
+          "offers": {
+            "@type": "Offer",
+            "price": "220",
+            "priceCurrency": "USD"
+          },
+          "description": "Klasik dana köfte, San Marzano domates sosu, parmesan"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Pollo alla Cacciatora",
+          "offers": {
+            "@type": "Offer",
+            "price": "250",
+            "priceCurrency": "USD"
+          },
+          "description": "Güveçte pişmiş tavuk, domates, zeytin, mantar, beyaz şarap"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Branzino al Forno",
+          "offers": {
+            "@type": "Offer",
+            "price": "310",
+            "priceCurrency": "USD"
+          },
+          "description": "Fırında bütün levrek, limon, otlar"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Vitello alla Milanese",
+          "offers": {
+            "@type": "Offer",
+            "price": "280",
+            "priceCurrency": "USD"
+          },
+          "description": "Galeta unlu dana pirzola, roka, kiraz domates"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Bistecca alla Fiorentina (iki kişilik)",
+          "offers": {
+            "@type": "Offer",
+            "price": "680",
+            "priceCurrency": "USD"
+          },
+          "description": "Kemikli T-bone biftek, biberiye, deniz tuzu, zeytinyağı"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Melanzane alla Parmigiana",
+          "offers": {
+            "@type": "Offer",
+            "price": "210",
+            "priceCurrency": "USD"
+          },
+          "description": "Fırınlanmış patlıcan, San Marzano domates, mozzarella (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Filetto di Branzino",
+          "offers": {
+            "@type": "Offer",
+            "price": "295",
+            "priceCurrency": "USD"
+          },
+          "description": "Tavada pişirilmiş levrek fileto, kereviz püresi, ızgara pırasa, otlu yağ"
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Pizza & Pasta",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Pizza Margherita",
+          "offers": {
+            "@type": "Offer",
+            "price": "180",
+            "priceCurrency": "USD"
+          },
+          "description": "San Marzano domates, fior di latte mozzarella, fesleğen (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Pizza Diavola",
+          "offers": {
+            "@type": "Offer",
+            "price": "200",
+            "priceCurrency": "USD"
+          },
+          "description": "Acılı salam, domates, mozzarella, acı biber yağı"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Pizza Quattro Formaggi",
+          "offers": {
+            "@type": "Offer",
+            "price": "210",
+            "priceCurrency": "USD"
+          },
+          "description": "Mozzarella, gorgonzola, fontina, parmesan (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Pizza Prosciutto e Funghi",
+          "offers": {
+            "@type": "Offer",
+            "price": "220",
+            "priceCurrency": "USD"
+          },
+          "description": "Parma jambonu, mantar, mozzarella"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Lasagna della Nonna",
+          "offers": {
+            "@type": "Offer",
+            "price": "230",
+            "priceCurrency": "USD"
+          },
+          "description": "Katmanlı makarna, dana ragù, beşamel, parmesan"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Spaghetti alla Carbonara",
+          "offers": {
+            "@type": "Offer",
+            "price": "210",
+            "priceCurrency": "USD"
+          },
+          "description": "Guanciale, yumurta sarısı, pecorino, karabiber"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Spaghetti al Pomodoro",
+          "offers": {
+            "@type": "Offer",
+            "price": "170",
+            "priceCurrency": "USD"
+          },
+          "description": "San Marzano domates, fesleğen, sarımsak (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Spaghetti Bolognese",
+          "offers": {
+            "@type": "Offer",
+            "price": "220",
+            "priceCurrency": "USD"
+          },
+          "description": "Yavaş pişmiş dana ragù, parmesan"
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Contorni",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Patate al Forno",
+          "offers": {
+            "@type": "Offer",
+            "price": "100",
+            "priceCurrency": "USD"
+          },
+          "description": "Fırınlanmış patates, biberiye, sarımsak (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Verdure Grigliate",
+          "offers": {
+            "@type": "Offer",
+            "price": "110",
+            "priceCurrency": "USD"
+          },
+          "description": "Mevsim sebzeleri ızgara, zeytinyağı (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Spinaci all'Aglio",
+          "offers": {
+            "@type": "Offer",
+            "price": "90",
+            "priceCurrency": "USD"
+          },
+          "description": "Sote ıspanak, sarımsak, zeytinyağı (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Funghi Trifolati",
+          "offers": {
+            "@type": "Offer",
+            "price": "120",
+            "priceCurrency": "USD"
+          },
+          "description": "Sote mantar, sarımsak, maydanoz (V)"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Focaccia",
+          "offers": {
+            "@type": "Offer",
+            "price": "80",
+            "priceCurrency": "USD"
+          },
+          "description": "Sıcak biberiyeli focaccia ekmeği (V)"
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Vini & Cocktail",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Aperol Spritz",
+          "offers": {
+            "@type": "Offer",
+            "price": "190",
+            "priceCurrency": "USD"
+          },
+          "description": "Aperol, prosecco, soda"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Bellini",
+          "offers": {
+            "@type": "Offer",
+            "price": "200",
+            "priceCurrency": "USD"
+          },
+          "description": "Beyaz şeftali püresi, prosecco"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Chianti Classico",
+          "offers": {
+            "@type": "Offer",
+            "price": "200",
+            "priceCurrency": "USD"
+          },
+          "description": "Kadeh"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Pinot Grigio",
+          "offers": {
+            "@type": "Offer",
+            "price": "190",
+            "priceCurrency": "USD"
+          },
+          "description": "Kadeh"
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Caffè & Tè",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Espresso",
+          "offers": {
+            "@type": "Offer",
+            "price": "80",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Cappuccino",
+          "offers": {
+            "@type": "Offer",
+            "price": "110",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Caffè Latte",
+          "offers": {
+            "@type": "Offer",
+            "price": "110",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Espresso Macchiato",
+          "offers": {
+            "@type": "Offer",
+            "price": "90",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Tè alle Erbe",
+          "offers": {
+            "@type": "Offer",
+            "price": "80",
+            "priceCurrency": "USD"
+          },
+          "description": "Günün seçkisi için personelimize danışabilirsiniz"
+        }
+      ]
+    },
+    {
+      "@type": "MenuSection",
+      "name": "Dolci",
+      "hasMenuItem": [
+        {
+          "@type": "MenuItem",
+          "name": "Tiramisù",
+          "offers": {
+            "@type": "Offer",
+            "price": "150",
+            "priceCurrency": "USD"
+          },
+          "description": "Espresso emdirilmiş kedidili bisküvi, mascarpone, kakao"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Panna Cotta",
+          "offers": {
+            "@type": "Offer",
+            "price": "130",
+            "priceCurrency": "USD"
+          },
+          "description": "Vanilyalı panna cotta, meyve sosu"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Cannoli Siciliani",
+          "offers": {
+            "@type": "Offer",
+            "price": "140",
+            "priceCurrency": "USD"
+          },
+          "description": "Ricotta kreması, fıstık, şekerlenmiş portakal"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Gelato Misto",
+          "offers": {
+            "@type": "Offer",
+            "price": "110",
+            "priceCurrency": "USD"
+          },
+          "description": "Seçme el yapımı dondurma topları"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Torta al Cioccolato",
+          "offers": {
+            "@type": "Offer",
+            "price": "150",
+            "priceCurrency": "USD"
+          },
+          "description": "Sıcak çikolatalı kek, vanilyalı dondurma"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Affogato",
+          "offers": {
+            "@type": "Offer",
+            "price": "120",
+            "priceCurrency": "USD"
+          },
+          "description": "Vanilyalı dondurma, sıcak espresso"
+        },
+        {
+          "@type": "MenuItem",
+          "name": "Cupola di Cioccolato",
+          "offers": {
+            "@type": "Offer",
+            "price": "140",
+            "priceCurrency": "USD"
+          },
+          "description": "Bitter çikolatalı mus kubbesi, yaprak altın, mevsim meyveleri"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="has-photo-hero">
+
+<!-- ANNOUNCEMENT BAR — edit the message below, or remove this whole block to disable -->
+<div class="announce-bar">
+  <div class="announce-bar-inner">
+    <p><i class="fas fa-champagne-glasses"></i> <span data-i18n="announce-text">Tonight: Live Jazz from 8 PM — walk-ins welcome.</span></p>
+    <button class="announce-close" aria-label="Dismiss announcement"><i class="fas fa-times"></i></button>
+  </div>
+</div>
+
+<div class="loader">
+  <div class="loader-icon-wrap"><img src="assets/img/icon/favicon.png" alt="Aurelia"></div>
+  <span class="lname">AURELIA</span>
+  <span class="loader-bar"><span></span></span>
+</div>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img src="assets/img/icon/favicon.png" alt="Aurelia">
+      <span class="brand-name">Aurelia<small>Restaurant & Bar</small></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+      <li><a href="about.html" data-i18n="nav-about">About</a></li>
+      <li><a href="menu.html" class="active" data-i18n="nav-menu">Menu</a></li>
+      <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+      <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+            <div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="tr">TR</button><button type="button" data-lang="en">EN</button></div>
+            <a href="reservation.html" class="nav-reserve-btn" data-i18n="nav-reserve-short">Reserve</a>
+      <button class="icon-link cart-nav-btn" data-cart-open aria-label="Open cart">
+        <i class="fas fa-bag-shopping"></i>
+        <span class="cart-badge" style="display:none">0</span>
+      </button>
+<a class="icon-link" href="https://www.instagram.com/aurelia.restaurant/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-nav">
+  <button class="mobile-nav-close" aria-label="Close menu"><i class="fas fa-times"></i></button>
+  <div class="mobile-nav-links">
+    <a href="index.html" data-i18n="nav-home">Home</a>
+    <a href="about.html" data-i18n="nav-about">About</a>
+    <a href="menu.html" data-i18n="nav-menu">Menu</a>
+    <a href="gallery.html" data-i18n="nav-gallery">Gallery</a>
+    <a href="contact.html" data-i18n="nav-contact">Contact</a>
+  </div>
+  <div class="mobile-nav-foot">
+    <a href="reservation.html" class="mobile-reserve-btn" data-i18n="nav-reserve">Reserve a Table</a>
+    <div class="lang-switch" role="group" aria-label="Language"><button type="button" data-lang="tr">TR</button><button type="button" data-lang="en">EN</button></div>
+    <div class="mobile-nav-social">
+      <a href="https://www.instagram.com/aurelia.restaurant/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="tel:+900000000000" aria-label="Call Aurelia"><i class="fas fa-phone"></i></a>
+    </div>
+  </div>
+</div>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="kicker" data-i18n="menu-kicker">The Menu</span>
+    <h1>
+      <span data-i18n="menu-title-1">Seasonal,</span>
+      <span class="serif-italic copper-text" data-i18n="menu-title-2">Refined</span>
+    </h1>
+    <p data-i18n="menu-text">Classic Italian dishes, elevated with restraint.</p>
+  </div>
+
+</section>
+
+
+<section class="section wrap" id="menuStart">
+  <div class="menu-toolbar">
+    <div class="menu-index">
+      <button class="chip active" data-filter="all"><span class="mi-label" data-i18n="filter-all">All</span></button>
+      <button class="chip" data-filter="filter"><i class="fas fa-bread-slice mi-icon" aria-hidden="true"></i><span class="mi-label" data-i18n="chip-filter">Antipasti</span></button>
+      <button class="chip" data-filter="iced"><i class="fas fa-leaf mi-icon" aria-hidden="true"></i><span class="mi-label" data-i18n="chip-iced">Insalate</span></button>
+      <button class="chip" data-filter="hot"><i class="fas fa-drumstick-bite mi-icon" aria-hidden="true"></i><span class="mi-label" data-i18n="chip-hot">Secondi</span></button>
+      <button class="chip" data-filter="shake"><i class="fas fa-bowl-food mi-icon" aria-hidden="true"></i><span class="mi-label" data-i18n="chip-shake">Pasta & Risotto</span></button>
+      <button class="chip" data-filter="tea"><i class="fas fa-carrot mi-icon" aria-hidden="true"></i><span class="mi-label" data-i18n="chip-tea">Contorni</span></button>
+      <button class="chip" data-filter="cocktail"><i class="fas fa-wine-glass mi-icon" aria-hidden="true"></i><span class="mi-label" data-i18n="chip-cocktail">Vini & Cocktail</span></button>
+      <button class="chip" data-filter="hotdrink"><i class="fas fa-mug-hot mi-icon" aria-hidden="true"></i><span class="mi-label" data-i18n="chip-hotdrink">Caffè & Tè</span></button>
+      <button class="chip" data-filter="food"><i class="fas fa-cookie-bite mi-icon" aria-hidden="true"></i><span class="mi-label" data-i18n="chip-food">Dolci</span></button>
+    </div>
+
+    <div class="menu-search">
+      <i class="fas fa-magnifying-glass"></i>
+      <input
+  type="text"
+  id="menuSearch"
+  placeholder="Search dishes, drinks…"
+  data-i18n-ph="search-ph"
+  data-i18n-aria="search-aria"
+  aria-label="Search menu"
+/>
+
+</div>
+  </div>
+
+  <!-- Menu container -->
+  <div id="menuContainer"></div>
+
+  <p class="no-results" data-i18n="no-results">No dishes matched your search.</p>
+
+<div class="menu-note reveal">
+  <span data-i18n="menu-note">Vegetarian options marked V · Please tell your server about any allergies · Prices include tax</span>
+</div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <div class="foot-brand"><img src="assets/img/icon/favicon.png" alt="Aurelia"><b>Aurelia</b></div>
+        <p data-i18n="foot-tag">A table worth making time for.</p>
+        <div class="foot-social">
+          <a href="https://www.instagram.com/aurelia.restaurant/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://maps.google.com/?q=123+Example+Street+Your+City" target="_blank" rel="noopener" aria-label="Location"><i class="fas fa-location-dot"></i></a>
+          <a href="tel:+900000000000" aria-label="Phone"><i class="fas fa-phone"></i></a>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot-explore">Explore</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+          <li><a href="about.html" data-i18n="nav-about">About</a></li>
+          <li><a href="menu.html" data-i18n="nav-menu">Menu</a></li>
+          <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+          <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+          <li><a href="reservation.html" data-i18n="nav-reserve">Reserve a Table</a></li>
+          <li><a href="faq.html" data-i18n="foot-nav-faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot-contact">Contact</h4>
+        <ul>
+          <li>
+  <a href="https://maps.google.com/?q=123+Example+Street+Your+City"
+     target="_blank"
+     rel="noopener"
+     data-i18n="footer-address">123 Example Street, Your City</a>
+</li>
+          <li><a href="tel:+900000000000">0000 000 00 00</a></li>
+          <li><a href="mailto:you@example.com">you@example.com</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4 data-i18n="foot-hours">Opening Hours</h4>
+        <div class="foot-hours">
+          <div class="hr-row"><span data-i18n="foot-everyday">Every day</span><span>20:00 – 00:00</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+<p>
+  © <span id="year">2026</span> Aurelia ·
+  <span data-i18n="footer-rights">All rights reserved.</span> ·
+  <a href="privacy-policy.html" data-i18n="footer-privacy" style="color:rgba(248,243,232,.7);text-decoration:underline">Privacy Policy</a>
+</p>
+
+<p class="made copper-text serif-italic" data-i18n="footer-slogan">Good food, always worth the table</p>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="scroll-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+<!-- CART DRAWER -->
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-panel">
+    <div class="cart-head">
+      <h3><i class="fas fa-bag-shopping"></i> <span data-i18n="cart-title">Your Order</span></h3>
+      <button class="cart-close" data-cart-close aria-label="Close cart"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-body" id="cartBody">
+      <div class="cart-empty"><i class="fas fa-bag-shopping"></i><p data-i18n="cart-empty">Your cart is empty</p></div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total"><span data-i18n="cart-total-label">Total</span><span class="cart-total-value">$0</span></div>
+      <button class="btn btn-primary cart-checkout" id="cartCheckoutBtn"><i class="fab fa-whatsapp"></i> <span data-i18n="cart-checkout-btn">Order via WhatsApp</span></button>
+      <button class="cart-clear" id="cartClearBtn" data-i18n="cart-clear-btn">Clear cart</button>
+    </div>
+  </div>
+</div>
+<script src="assets/js/site-config.js?v=1"></script>
+<script src="assets/js/app.js?v=2.0"></script>
+<script src="assets/js/cart.js?v=2.0"></script>
+<script>
+
+const CAT_LABELS = {
+  filter:'Antipasti', iced:'Insalate', hot:'Secondi',
+  shake:'Pizza & Pasta', tea:'Contorni',
+  cocktail:'Vini & Cocktail', hotdrink:'Caffè & Tè', food:'Dolci'
+};
+const CAT_LABELS_TR = {
+  filter:'Başlangıçlar', iced:'Salatalar', hot:'Ana Yemekler',
+  shake:'Pizza & Makarna', tea:'Garnitürler',
+  cocktail:'Şarap & Kokteyl', hotdrink:'Kahve & Çay', food:'Tatlılar'
+};
+
+const CAT_ORDER = ['filter','iced','hot','shake','tea','cocktail','hotdrink','food'];
+const CAT_ICONS = { filter:'fa-bread-slice', iced:'fa-leaf', hot:'fa-drumstick-bite', shake:'fa-bowl-food', tea:'fa-carrot', cocktail:'fa-wine-glass', hotdrink:'fa-mug-hot', food:'fa-cookie-bite' };
+
+function slugify(s){ return String(s).toLowerCase().replace(/ğ/g,'g').replace(/ü/g,'u').replace(/ş/g,'s').replace(/ı/g,'i').replace(/ö/g,'o').replace(/ç/g,'c').replace(/[^a-z0-9]+/g,'-'); }
+function esc(s){ return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+/* Search + filter — reattached to the DOM after each render */
+function reInitMenuFilter() {
+  const search  = document.querySelector('#menuSearch');
+  const chips   = document.querySelectorAll('.chip');
+  const noRes   = document.querySelector('.no-results');
+  let activeCat = 'all';
+  chips.forEach(ch => { if (ch.classList.contains('active')) activeCat = ch.dataset.filter; });
+
+  const norm = (str='') => str.toString().toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .replace(/ı/g,'i').replace(/ç/g,'c').replace(/ğ/g,'g')
+    .replace(/ş/g,'s').replace(/ö/g,'o').replace(/ü/g,'u');
+
+  function runFilter() {
+    const q = search ? norm(search.value.trim()) : '';
+    let total = 0;
+    document.querySelectorAll('.menu-cat').forEach(cat => {
+      const match = activeCat === 'all' || activeCat === cat.dataset.cat;
+      let shown = 0;
+      cat.querySelectorAll('.m-item').forEach(it => {
+        const vis = match && (q === '' || norm(it.dataset.search || it.textContent).includes(q));
+        it.style.display = vis ? '' : 'none';
+        if (vis) shown++;
+      });
+      const wrap = cat.parentElement;
+      (wrap && wrap.dataset && wrap.dataset.d ? wrap : cat).style.display = shown > 0 ? '' : 'none';
+      total += shown;
+    });
+    if (noRes) noRes.classList.toggle('show', total === 0);
+  }
+
+  if (search) {
+    if (search._ff) search.removeEventListener('input', search._ff);
+    search._ff = runFilter;
+    search.addEventListener('input', runFilter);
+  }
+  chips.forEach(ch => {
+    if (ch._ff) ch.removeEventListener('click', ch._ff);
+    ch._ff = () => {
+      chips.forEach(c => c.classList.remove('active'));
+      ch.classList.add('active');
+      activeCat = ch.dataset.filter;
+      runFilter();
+    };
+    ch.addEventListener('click', ch._ff);
+  });
+  runFilter();
+}
+window.__reInitMenu = reInitMenuFilter;
+
+function menuLang() {
+  return (window.__aureliaGetLang && window.__aureliaGetLang()) || 'tr';
+}
+function itemDesc(item) {
+  if (menuLang() === 'en') return item.desc || '';
+  return item.descTr || item.desc || '';
+}
+function itemName(item) {
+  if (menuLang() === 'en') return item.name;
+  return item.nameTr || item.name;
+}
+function renderMenu(items) {
+  const labels = menuLang() === 'en' ? CAT_LABELS : CAT_LABELS_TR;
+  const catMap = {};
+  items.forEach(item => {
+    if (!catMap[item.cat]) catMap[item.cat] = [];
+    catMap[item.cat].push(item);
+  });
+
+  const container = document.getElementById('menuContainer');
+  const ordered = CAT_ORDER.filter(c => catMap[c]).map(c => [c, catMap[c]]);
+  const lang = menuLang();
+
+  container.innerHTML = ordered.map(([cat, catItems]) => {
+    const label = labels[cat] || cat;
+    return `<div data-d="1"><div class="menu-cat" data-cat="${cat}">
+      <div class="menu-cat-head">
+        <i class="fas ${CAT_ICONS[cat] || ''} cat-num"></i>
+        <h2>${label}</h2>
+      </div>
+      <div class="menu-items">
+        ${catItems.map(item => {
+          const desc = itemDesc(item);
+          const name = itemName(item);
+          const s = slugify(item.name+' '+(item.nameTr||'')+' '+(desc||'')+' '+label);
+          return `<div class="m-item" data-search="${s}">
+            <span class="mi-name">${esc(name)}</span>
+            <span class="mi-leader" aria-hidden="true"></span>
+            <span class="mi-price">${esc(item.price)}</span>
+            ${desc?`<span class="mi-desc">${esc(desc)}</span>`:''}
+            <button class="mi-add" data-cart-add data-id="${esc(item.id)}" data-name="${esc(name)}" data-price="${esc(item.price)}" aria-label="${lang==='en' ? 'Add '+esc(name)+' to cart' : esc(name)+' ürününü sepete ekle'}"><i class="fas fa-plus"></i></button>
+          </div>`;
+        }).join('')}
+      </div>
+    </div></div>`;
+  }).join('');
+
+  document.querySelectorAll('[data-cart-add]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (window.AureliaCart) {
+        window.AureliaCart.addItem({ id: btn.dataset.id, name: btn.dataset.name, price: btn.dataset.price });
+      }
+    });
+  });
+
+  reInitMenuFilter();
+}
+
+/* Your menu — no database required. Add, remove, or edit dishes directly
+   in this array. Each item needs: cat (category key), name, price, desc,
+   and an optional tag (e.g. "Signature"). */
+const MENU_ITEMS = [{"cat":"filter","name":"Bruschetta al Pomodoro","price":"$130","desc":"Grilled bread, San Marzano tomato, basil, garlic (V)","descTr":"Izgara ekmek, San Marzano domates, fesleğen, sarımsak (V)"},{"cat":"filter","name":"Caprese Classica","price":"$150","desc":"Buffalo mozzarella, tomato, basil, aged balsamico (V)","descTr":"Bufala mozzarella, domates, fesleğen, olgunlaştırılmış balsamik (V)"},{"cat":"filter","name":"Prosciutto e Melone","price":"$160","desc":"Parma ham, sweet cantaloupe","descTr":"Parma jambonu, tatlı kavun"},{"cat":"filter","name":"Calamari Fritti","price":"$170","desc":"Crispy fried calamari, lemon aioli","descTr":"Çıtır kalamar, limonlu aioli"},{"cat":"filter","name":"Arancini di Riso","price":"$140","desc":"Fried risotto balls, mozzarella, tomato sauce (V)","descTr":"Kızarmış risotto topları, mozzarella, domates sosu (V)"},{"cat":"filter","name":"Antipasto Misto","price":"$210","desc":"Cured meats, cheeses, olives, marinated vegetables","descTr":"Şarküteri, peynir çeşitleri, zeytin, marine sebzeler"},{"cat":"filter","name":"Zuppa Minestrone","price":"$120","desc":"Classic vegetable soup, parmigiano (V)","descTr":"Klasik sebze çorbası, parmesan (V)"},{"cat":"iced","name":"Insalata Mista","price":"$130","desc":"Mixed greens, tomato, olive oil vinaigrette (V)","descTr":"Karışık yeşillik, domates, zeytinyağlı vinaigrette (V)"},{"cat":"iced","name":"Insalata Cesare","price":"$150","desc":"Romaine, parmigiano, croutons, anchovy","descTr":"Marul, parmesan, kruton, ançüez"},{"cat":"iced","name":"Rucola e Parmigiano","price":"$140","desc":"Arugula, shaved parmigiano, lemon, olive oil (V)","descTr":"Roka, ince dilimlenmiş parmesan, limon, zeytinyağı (V)"},{"cat":"iced","name":"Insalata di Mare","price":"$190","desc":"Shrimp, calamari, mussels, lemon, parsley","descTr":"Karides, kalamar, midye, limon, maydanoz"},{"cat":"iced","name":"Panzanella","price":"$140","desc":"Tuscan bread salad, tomato, cucumber, red onion (V)","descTr":"Toskana usulü ekmek salatası, domates, salatalık, kırmızı soğan (V)"},{"cat":"iced","name":"Insalata di Burrata","price":"$170","desc":"Burrata, heirloom tomato, basil (V)","descTr":"Burrata, özel yetiştirilmiş domates, fesleğen (V)"},{"cat":"hot","name":"Pollo alla Parmigiana","price":"$260","desc":"Breaded chicken breast, tomato sauce, melted mozzarella, basil","descTr":"Galeta unlu tavuk göğsü, domates sosu, eritilmiş mozzarella, fesleğen"},{"cat":"hot","name":"Salmone alla Griglia","price":"$290","desc":"Grilled salmon fillet, lemon butter, asparagus","descTr":"Izgara somon fileto, limonlu tereyağı, kuşkonmaz"},{"cat":"hot","name":"Polpette al Sugo","price":"$220","desc":"Classic beef meatballs, San Marzano tomato sauce, parmigiano","descTr":"Klasik dana köfte, San Marzano domates sosu, parmesan"},{"cat":"hot","name":"Pollo alla Cacciatora","price":"$250","desc":"Braised chicken, tomato, olives, mushrooms, white wine","descTr":"Güveçte pişmiş tavuk, domates, zeytin, mantar, beyaz şarap"},{"cat":"hot","name":"Branzino al Forno","price":"$310","desc":"Oven-roasted whole sea bass, lemon, herbs","descTr":"Fırında bütün levrek, limon, otlar"},{"cat":"hot","name":"Vitello alla Milanese","price":"$280","desc":"Breaded veal cutlet, arugula, cherry tomato","descTr":"Galeta unlu dana pirzola, roka, kiraz domates"},{"cat":"hot","name":"Bistecca alla Fiorentina (for two)","price":"$680","desc":"Bone-in T-bone steak, rosemary, sea salt, olive oil","descTr":"Kemikli T-bone biftek, biberiye, deniz tuzu, zeytinyağı","nameTr":"Bistecca alla Fiorentina (iki kişilik)"},{"cat":"hot","name":"Melanzane alla Parmigiana","price":"$210","desc":"Baked eggplant, San Marzano tomato, mozzarella (V)","descTr":"Fırınlanmış patlıcan, San Marzano domates, mozzarella (V)"},{"cat":"hot","name":"Filetto di Branzino","price":"$295","desc":"Pan-seared sea bass fillet, celeriac purée, grilled leeks, herb oil","descTr":"Tavada pişirilmiş levrek fileto, kereviz püresi, ızgara pırasa, otlu yağ"},{"cat":"shake","name":"Pizza Margherita","price":"$180","desc":"San Marzano tomato, fior di latte mozzarella, basil (V)","descTr":"San Marzano domates, fior di latte mozzarella, fesleğen (V)"},{"cat":"shake","name":"Pizza Diavola","price":"$200","desc":"Spicy salami, tomato, mozzarella, chili oil","descTr":"Acılı salam, domates, mozzarella, acı biber yağı"},{"cat":"shake","name":"Pizza Quattro Formaggi","price":"$210","desc":"Mozzarella, gorgonzola, fontina, parmigiano (V)","descTr":"Mozzarella, gorgonzola, fontina, parmesan (V)"},{"cat":"shake","name":"Pizza Prosciutto e Funghi","price":"$220","desc":"Parma ham, mushrooms, mozzarella","descTr":"Parma jambonu, mantar, mozzarella"},{"cat":"shake","name":"Lasagna della Nonna","price":"$230","desc":"Layers of pasta, beef ragù, béchamel, parmigiano","descTr":"Katmanlı makarna, dana ragù, beşamel, parmesan"},{"cat":"shake","name":"Spaghetti alla Carbonara","price":"$210","desc":"Guanciale, egg yolk, pecorino, black pepper","descTr":"Guanciale, yumurta sarısı, pecorino, karabiber"},{"cat":"shake","name":"Spaghetti al Pomodoro","price":"$170","desc":"San Marzano tomato, basil, garlic (V)","descTr":"San Marzano domates, fesleğen, sarımsak (V)"},{"cat":"shake","name":"Spaghetti Bolognese","price":"$220","desc":"Slow-braised beef ragù, parmigiano","descTr":"Yavaş pişmiş dana ragù, parmesan"},{"cat":"tea","name":"Patate al Forno","price":"$100","desc":"Roasted potatoes, rosemary, garlic (V)","descTr":"Fırınlanmış patates, biberiye, sarımsak (V)"},{"cat":"tea","name":"Verdure Grigliate","price":"$110","desc":"Grilled seasonal vegetables, olive oil (V)","descTr":"Mevsim sebzeleri ızgara, zeytinyağı (V)"},{"cat":"tea","name":"Spinaci all'Aglio","price":"$90","desc":"Sautéed spinach, garlic, olive oil (V)","descTr":"Sote ıspanak, sarımsak, zeytinyağı (V)"},{"cat":"tea","name":"Funghi Trifolati","price":"$120","desc":"Sautéed mushrooms, garlic, parsley (V)","descTr":"Sote mantar, sarımsak, maydanoz (V)"},{"cat":"tea","name":"Focaccia","price":"$80","desc":"Warm rosemary focaccia bread (V)","descTr":"Sıcak biberiyeli focaccia ekmeği (V)"},{"cat":"cocktail","name":"Aperol Spritz","price":"$190","desc":"Aperol, prosecco, soda","descTr":"Aperol, prosecco, soda"},{"cat":"cocktail","name":"Bellini","price":"$200","desc":"White peach purée, prosecco","descTr":"Beyaz şeftali püresi, prosecco"},{"cat":"cocktail","name":"Chianti Classico","price":"$200","desc":"By the glass","descTr":"Kadeh"},{"cat":"cocktail","name":"Pinot Grigio","price":"$190","desc":"By the glass","descTr":"Kadeh"},{"cat":"hotdrink","name":"Espresso","price":"$80","desc":"","descTr":""},{"cat":"hotdrink","name":"Cappuccino","price":"$110","desc":"","descTr":""},{"cat":"hotdrink","name":"Caffè Latte","price":"$110","desc":"","descTr":""},{"cat":"hotdrink","name":"Espresso Macchiato","price":"$90","desc":"","descTr":""},{"cat":"hotdrink","name":"Tè alle Erbe","price":"$80","desc":"Ask your server for today's selection","descTr":"Günün seçkisi için personelimize danışabilirsiniz"},{"cat":"food","name":"Tiramisù","price":"$150","desc":"Espresso-soaked ladyfingers, mascarpone, cocoa","descTr":"Espresso emdirilmiş kedidili bisküvi, mascarpone, kakao"},{"cat":"food","name":"Panna Cotta","price":"$130","desc":"Vanilla panna cotta, berry coulis","descTr":"Vanilyalı panna cotta, meyve sosu"},{"cat":"food","name":"Cannoli Siciliani","price":"$140","desc":"Ricotta cream, pistachio, candied orange","descTr":"Ricotta kreması, fıstık, şekerlenmiş portakal"},{"cat":"food","name":"Gelato Misto","price":"$110","desc":"Assorted artisan gelato scoops","descTr":"Seçme el yapımı dondurma topları"},{"cat":"food","name":"Torta al Cioccolato","price":"$150","desc":"Warm chocolate cake, vanilla gelato","descTr":"Sıcak çikolatalı kek, vanilyalı dondurma"},{"cat":"food","name":"Affogato","price":"$120","desc":"Vanilla gelato, hot espresso","descTr":"Vanilyalı dondurma, sıcak espresso"},{"cat":"food","name":"Cupola di Cioccolato","price":"$140","desc":"Dark chocolate mousse dome, gold leaf, seasonal berries","descTr":"Bitter çikolatalı mus kubbesi, yaprak altın, mevsim meyveleri"}].map((item, i) => ({ id: 'item-' + i, ...item }));
+
+// Render the menu — no backend needed. Add, edit, or remove dishes by
+// editing the MENU_ITEMS array above.
+renderMenu(MENU_ITEMS);
+document.addEventListener('aurelia:langchange', () => renderMenu(MENU_ITEMS));
+</script>
+
+<!-- WHATSAPP FLOAT -->
+<a href="#" data-whatsapp-link data-whatsapp-text="Hi%2C%20I%27d%20like%20to%20know%20more%20about%20Aurelia." 
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contact via WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+
+</body>
+</html>
