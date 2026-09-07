@@ -1,8 +1,12 @@
 # 🍽️ Aurelia — Restaurant Website + Cart
 
-**🔗 [Live Demo](https://aurelia-restaurant-website-template.vercel.app)**
+**🔗 [Live Demo](https://aurelia-restaurant-website-template.vercel.app)**  ·  🇹🇷 [Türkçe](README.tr.md)
 
 **Framework-free (Vanilla HTML/CSS/JS)** website starter kit for restaurants and small businesses.
+
+| Home | Menu &amp; cart |
+| --- | --- |
+| [![Aurelia home page](docs/home.jpg)](https://aurelia-restaurant-website-template.vercel.app) | [![Aurelia menu page](docs/menu.jpg)](https://aurelia-restaurant-website-template.vercel.app/menu.html) |
 
 **No backend, no database, no third-party services, no build step.** Every page is static HTML/CSS/JS — open any file directly in a browser and it works immediately. Content (menu items, gallery photos) lives directly in the page files. Every guest-facing action — ordering, reservations, general enquiries — is handled through **WhatsApp**, so there's nothing to sign up for and nothing to configure before the site is fully functional.
 
