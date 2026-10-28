@@ -110,6 +110,8 @@
       'kvkk-s8-p1':'To exercise the rights listed above, you may submit your request by e-mail to <a href="mailto:you@example.com">you@example.com</a> or in writing to our restaurant address. Your request will be concluded free of charge as soon as possible, and no later than 30 days, depending on its nature.',
       'kvkk-h9':'9. Cookies',
       'kvkk-s9-p1':'Our website uses browser storage for technical purposes such as remembering the contents of your cart (<code>localStorage</code>). This information is kept on your device and does not serve any purpose of tracking your identity. Our website does not use advertising or third-party tracking cookies.',
+      'notice-text':'We use your browser\'s local storage to remember your cart — no tracking cookies, nothing sent to third parties. See our <a href="privacy-policy.html">Privacy Policy</a> for details.',
+      'notice-ok':'Got it',
       'kvkk-h10':'10. General Information',
       'kvkk-s10-p1':'As Aurelia, we respect the privacy of all guests who visit our website and contact us. Accordingly:',
       'kvkk-s10-list':'<li>Your personal data is processed only for explicitly stated purposes and to the extent necessary,</li><li>Your data is protected with reasonable technical and administrative measures,</li><li>Your data is not shared with third parties for marketing purposes without your consent,</li><li>This policy may be updated in line with changes in legislation or our business processes; the current version is always published on this page.</li>',
@@ -368,6 +370,8 @@
       'kvkk-s8-p1':'Yukarıda sıralanan hakları kullanmak için talebinizi <a href="mailto:you@example.com">you@example.com</a> adresine e-posta yoluyla veya yazılı olarak restoran adresimize iletebilirsiniz. Talebiniz, niteliğine bağlı olarak en kısa sürede ve en geç 30 gün içinde ücretsiz olarak sonuçlandırılır.',
       'kvkk-h9':'9. Çerezler',
       'kvkk-s9-p1':'Web sitemiz, sepetinizin içeriğini hatırlamak gibi teknik amaçlarla tarayıcı depolamasını (<code>localStorage</code>) kullanır. Bu bilgi cihazınızda tutulur ve kimliğinizi takip etmek gibi bir amaca hizmet etmez. Web sitemiz reklam veya üçüncü taraf takip çerezleri kullanmaz.',
+      'notice-text':'Sepetinizi hatırlamak için yalnızca tarayıcınızın yerel depolamasını kullanıyoruz; takip çerezi yok, üçüncü taraflara hiçbir bilgi gönderilmez. Ayrıntılar için <a href="privacy-policy.html">Gizlilik Politikası</a> sayfamıza göz atın.',
+      'notice-ok':'Anladım',
       'kvkk-h10':'10. Genel Bilgilendirme',
       'kvkk-s10-p1':'Aurelia olarak, web sitemizi ziyaret eden ve bizimle iletişime geçen tüm misafirlerimizin gizliliğine saygı duyuyoruz. Buna göre:',
       'kvkk-s10-list':'<li>Kişisel verileriniz yalnızca açıkça belirtilen amaçlar için ve gerektiği ölçüde işlenir,</li><li>Verileriniz makul teknik ve idari önlemlerle korunur,</li><li>Verileriniz onayınız olmadan pazarlama amacıyla üçüncü taraflarla paylaşılmaz,</li><li>Bu politika, mevzuat veya iş süreçlerimizdeki değişikliklere paralel olarak güncellenebilir; güncel sürüm her zaman bu sayfada yayınlanır.</li>',
@@ -922,13 +926,14 @@ runFilter();
 (function(){
   const KEY = 'aurelia_notice_ack';
   if (localStorage.getItem(KEY)) return;
+  const t = k => (window.__aureliaT && window.__aureliaT(k)) || '';
 
   const bar = document.createElement('div');
   bar.className = 'privacy-notice';
   bar.innerHTML = `
     <div class="privacy-notice-inner">
-      <p><i class="fas fa-circle-info"></i> We use your browser's local storage to remember your cart — no tracking cookies, nothing sent to third parties. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
-      <button type="button" class="btn btn-primary" id="privacyNoticeOk"><span>Got it</span></button>
+      <p><i class="fas fa-circle-info"></i> <span data-i18n="notice-text">${t('notice-text')}</span></p>
+      <button type="button" class="btn btn-primary" id="privacyNoticeOk"><span data-i18n="notice-ok">${t('notice-ok')}</span></button>
     </div>
   `;
   document.body.appendChild(bar);
